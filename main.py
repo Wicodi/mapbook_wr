@@ -6,5 +6,11 @@ users = [
 
 ]
 
-for user in users:
-    print(f"Twój znajomy   {user['name']},z {user['location']} opublikował {user['posts']} postów")
+
+
+def get_user_info(users_data: list)->None:
+    for user in users:
+        print(f"Twój znajomy   {user['name']}, z miejscowości: {user['Location']} opublikował {user['posts']} postów")
+
+
+get_user_info(users)
