@@ -1,26 +1,77 @@
-from utils.controller import get_user_info, add_user, remove_user, update_user, get_coordinates, get_map
-from utils.model import users
+from tkinter import *
 
 
-def main():
-    while True:
-        print("=============MENU=============")
-        print("0 - zamknij aplikację")
-        print("1 - wyświetl co u znajomych")
-        print("2 - dodaj nowego użytkownika")
-        print("3 - usuń nowego użytkownika")
-        print("4 - edytuj użytkownika")
-        print("5 - przygotuj mapę znajomych")
-        print("=============MENU=============")
 
-        choice = input("Wybierz opcję menu ")
-        if choice == "0": break
-        if choice == "1": get_user_info(users)
-        if choice == "2": add_user(users)
-        if choice == "3": remove_user(users)
-        if choice == "4": update_user(users)
-        if choice == "5": get_map(users)
+root = Tk()
+
+root.title('mapbook_dp')
+root.geometry('1000x800')
+
+ramka_lista_obiektow = Frame(root)
+ramka_formularz = Frame(root)
+ramka_szczegoly_obiektow = Frame(root)
+
+ramka_lista_obiektow.grid(row=0, column=0, padx=50)
+ramka_formularz.grid(row=0, column=1)
+ramka_szczegoly_obiektow.grid(row=1, column=0)
+
+#ramka_lista_obiektow
+
+label_lista_obiektow = Label(ramka_lista_obiektow, text='Lista znajomych')
+label_lista_obiektow.grid(row=0, column=0)
+
+listbox_lista_obiektow = Listbox(ramka_lista_obiektow)
+listbox_lista_obiektow.grid(row=1, column=0, columnspan=3)
+
+button_pokaz_szczegoly = Button(ramka_lista_obiektow, text='Pokaż Szczegóły')
+button_pokaz_szczegoly.grid(row=3, column=0)
+
+button_usun_obiekt = Button(ramka_lista_obiektow, text='Usuń obiekt')
+button_usun_obiekt.grid(row=3, column=1)
+
+button_edytuj_obiekt = Button(ramka_lista_obiektow, text='Edytuj obiekt')
+button_edytuj_obiekt.grid(row=3, column=2)
+
+#ramka_formularz
+
+label_formularz=Label(ramka_formularz, text='Formularz')
+label_formularz.grid(row=0, column=1)
+
+label_imie=Label(ramka_formularz, text='Imie')
+label_imie.grid(row=1, column=0, columnspan=2)
+
+label_Nazwisko=Label(ramka_formularz, text='Nazwisko')
+label_Nazwisko.grid(row=2, column=0)
+
+label_miejscowosc=Label(ramka_formularz, text='Miejscowość')
+label_miejscowosc.grid(row=3, column=0)
+
+label_liczba_postow=Label(ramka_formularz, text='Liczba postów')
+label_liczba_postow.grid(row=4, column=0)
+
+entry_imie=Entry(ramka_formularz)
+entry_imie.grid(row=1, column=0, sticky=W)
+
+entry_nazwisko=Entry(ramka_formularz)
+entry_nazwisko.grid(row=2, column=1, sticky=W)
+
+entry_miejscowosc=Entry(ramka_formularz)
+entry_miejscowosc.grid(row=3, column=1, sticky=W)
+
+entry_liczba_postow=Entry(ramka_formularz)
+entry_liczba_postow.grid(row=4, column=1, sticky=W)
+
+button_dodaj_obiekt=Button(ramka_formularz, text='Dodaj')
+button_dodaj_obiekt.grid(row=5, column=0, columnspan=2)
+
+#ramka_szczegoly obiektu
+
+label_szczegoly_obiektow=Label(ramka_szczegoly_obiektow, text='Szczegóły użytkownika:')
+label_szczegoly_obiektow.grid(row=0, column=0)
+
+label_imie_szczegoly_obiektow=Label(ramka_szczegoly_obiektow, text='Imie')
+label_imie_szczegoly_obiektow.grid(row=1, column=0)
 
 
-if _name_ == "_main_":
-    main()
+
+root.mainloop()
