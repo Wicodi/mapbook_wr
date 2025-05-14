@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fff779afc492d5591c3a7384f1900708 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fff779afc492d5591c3a7384f1900708" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fff779afc492d5591c3a7384f1900708 = L.map(
+                "map_fff779afc492d5591c3a7384f1900708",
+                {
+                    center: [52.23, 21.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8c3757fe50e2ff70978228878e4ba0bb = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8c3757fe50e2ff70978228878e4ba0bb.addTo(map_fff779afc492d5591c3a7384f1900708);
+        
+    
+            var marker_295536363e69b13e50e5ea609668f89a = L.marker(
+                [52.231061, 19.364342],
+                {
+}
+            ).addTo(map_fff779afc492d5591c3a7384f1900708);
+        
+    
+        var popup_f8760ae1e34bc190475dfa7f8ced844e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_186486d7e04fe68f8ec0e416ec69ebb0 = $(`<div id="html_186486d7e04fe68f8ec0e416ec69ebb0" style="width: 100.0%; height: 100.0%;">Twój znajomy: Wiktor <br/> miejscowość: Kutno, <br/>opublikował: 500 postów </div>`)[0];
+                popup_f8760ae1e34bc190475dfa7f8ced844e.setContent(html_186486d7e04fe68f8ec0e416ec69ebb0);
+            
+        
+
+        marker_295536363e69b13e50e5ea609668f89a.bindPopup(popup_f8760ae1e34bc190475dfa7f8ced844e)
+        ;
+
+        
+    
+    
+            var marker_9ef38df32decc75e42fff5d6ac94dc5e = L.marker(
+                [50.983889, 23.169722],
+                {
+}
+            ).addTo(map_fff779afc492d5591c3a7384f1900708);
+        
+    
+        var popup_daff390fa9aa96157bb807bff4cea0c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_abecd4b24ab5ebe9b40bcf56f135a16c = $(`<div id="html_abecd4b24ab5ebe9b40bcf56f135a16c" style="width: 100.0%; height: 100.0%;">Twój znajomy: Michał <br/> miejscowość: Krasnystaw, <br/>opublikował: 400 postów </div>`)[0];
+                popup_daff390fa9aa96157bb807bff4cea0c5.setContent(html_abecd4b24ab5ebe9b40bcf56f135a16c);
+            
+        
+
+        marker_9ef38df32decc75e42fff5d6ac94dc5e.bindPopup(popup_daff390fa9aa96157bb807bff4cea0c5)
+        ;
+
+        
+    
+    
+            var marker_33efb25886f6ff015663b96a4495dee0 = L.marker(
+                [53.486944, 18.756944],
+                {
+}
+            ).addTo(map_fff779afc492d5591c3a7384f1900708);
+        
+    
+        var popup_994c1ab3b1fbd934bd31de3deddc42d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ec15e6d0e8c1932d10c756fb6d6f24fb = $(`<div id="html_ec15e6d0e8c1932d10c756fb6d6f24fb" style="width: 100.0%; height: 100.0%;">Twój znajomy: Ksavier <br/> miejscowość: Grudziądz, <br/>opublikował: 300 postów </div>`)[0];
+                popup_994c1ab3b1fbd934bd31de3deddc42d6.setContent(html_ec15e6d0e8c1932d10c756fb6d6f24fb);
+            
+        
+
+        marker_33efb25886f6ff015663b96a4495dee0.bindPopup(popup_994c1ab3b1fbd934bd31de3deddc42d6)
+        ;
+
+        
+    
+    
+            var marker_8c8d69f3c048b1fd8e2daa5a62ae1fe5 = L.marker(
+                [50.061389, 19.938333],
+                {
+}
+            ).addTo(map_fff779afc492d5591c3a7384f1900708);
+        
+    
+        var popup_9cb5228efcab3b04db5691bf7c64b192 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_595698958d9af1a383085301519ae5d7 = $(`<div id="html_595698958d9af1a383085301519ae5d7" style="width: 100.0%; height: 100.0%;">Twój znajomy: Damian <br/> miejscowość: Kraków, <br/>opublikował: 200 postów </div>`)[0];
+                popup_9cb5228efcab3b04db5691bf7c64b192.setContent(html_595698958d9af1a383085301519ae5d7);
+            
+        
+
+        marker_8c8d69f3c048b1fd8e2daa5a62ae1fe5.bindPopup(popup_9cb5228efcab3b04db5691bf7c64b192)
+        ;
+
+        
+    
+</script>
+</html>
